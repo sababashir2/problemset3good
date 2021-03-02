@@ -1,0 +1,181 @@
+---
+title: "Problem Set 3"
+author: "YOUR NAME"
+date: "Enter the date"
+output: pdf_document
+---
+
+
+# Installing the required packages
+
+```{r include=FALSE}
+##install.packages("ggplot2")
+##install.packages("reader")
+##install.packages("dplyr")
+##install.packages("tidyverse")
+##install.packages("stringr")
+##install.packages("htmlwidgets")
+##install.packages("jtools")
+##install.packages("fastDummies")
+##install.packages("corrplot")
+##install.packages("ggcorrplot")
+
+install.packages("Rmisc")
+install.packages('pander')
+
+
+
+```
+
+# Loading the required packages
+ You need to reload the installed packages every time you start a new session using the library function:
+
+```{r include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(reader)
+library(stringr)
+library(forcats)
+library(modelr)
+options(na.action = na.warn)
+library(magrittr)
+library(fastDummies)
+library(corrplot)
+library(ggcorrplot)
+library(hexbin)
+library(descr)
+library(Rmisc)
+library(pander)
+```
+
+# Upload your data file
+First upload the csv file to the bottom right corner window. Then the following code will upload that data into R. 
+# Make sure to use setwd() to set your directory (the directory in which you saved the PS_3.csv file in your computer) if you are using RStudio Desktop
+```{r include=FALSE}
+
+
+#data <- read_csv("PS_3.csv")
+
+
+```
+# Data_PS_3 –HR Records
+
+## Variable Definitions & Codes:
+
+Variable      |    Definitions & Codes
+--------------|------------------------ 
+ID:			      |    Employee identification number   
+Age:			    |    Age in years (rounded)                                                                    
+Jlevel:	    	|	   Job Level (4 levels of seniority, Scale 1 to 4, 1= low, 4= high
+Tenure:	    	|    Years of service in the current organization (rounded)
+Performance_pre:  |	 Performance before training. Scale 1 to 10; 1 = extremely poor, 10= extremely high
+Gender:		    | Male, Female 
+Race:		      |	White; Nonwhite
+Married: 	    |	N = 0; Y = 1
+Training:	    |	Participated in any training/development programs in the past 6 months.	Y, N
+JobSat_Pre:		    |	Job Satisfaction before training. Scale of 1 to 5; 1 = Strongly Dissatisfied, 5 = Strongly Satisfied 
+Salary: 	  	|	Annual Salary (dollars)
+Division    	|	HR, Finance, Marketing, IT
+Absent_Pre	      |	Number of days absent per year (before training)
+Turnover      |	Turnover intention in the next 6 months, Scale of 1 to 5, 1 = No intention to quit, 5= determined to leave within 6 months |
+JobSat_Post: |	Job Satisfaction after training. Scale of 1 to 5; 1 = Strongly Dissatisfied, 5 = Strongly Satisfied 
+Absent_Post	      |	Number of days absent per year (after training)
+Performance_Post: |	 Performance after training. Scale 1 to 10; 1 = extremely poor, 10= extremely high
+
+> You have drawn this sample from the employees in your organization.
+
+> ### **Important Note**: Do not put your text within the R code chunks. Only the R codes should be in the grey chunks. Your text should be outside of the grey chuncks. Look at R markdown cheatsheet for more information on how to organize your text in rmarkdown.
+
+# **Questions**
+
+# For each of the following statements answer these 5 questions:
+a) Graphically evaluate the hypothesized relationship (use only one appropriate graph of your choice and do not use correlation table) (0.5 point)
+b) What are the hypothesis statements? (0.5 point)
+c) What is the p-value? (0.5 point)
+d) What is your statistical conclusion using a significance level of 5 percent? (0.5 point)
+e) What is the practical conclusion? (0.5 point)
+
+
+#### Statement 1. (2.5 Points)	
+
+
+In this organization men on average have more training opportunities than women
+```{r}
+
+```
+
+
+
+#### Statement 2. (2.5 Points)	
+
+
+In this organization white employees on average have more training opportunities than non-white employees
+```{r}
+
+
+```
+
+
+
+#### Statement 3. (2.5 Points)	
+
+
+In this organization training has imcreased performance for trained employees compared to untrained employees. 
+```{r}
+
+```
+
+
+
+#### Statement 4. (2.5 Points)	
+
+
+In this organization training has reduced absenteeism for trained employees compared to untrained employees. 
+```{r}
+
+```
+
+
+
+#### Statement 5. (2.5 Points)	
+
+
+In this organization training has increased job satisfaction for trained employees compared to untrained employees.  
+```{r}
+
+```
+
+
+
+#### Statement 6. (2.5 Points)	
+
+
+In this organization, among employees who had training, job satisfaction has improved more for non-whites than whites.
+```{r}
+
+```
+
+
+
+#### Statement 7. (2.5 Points)	
+
+
+In this organization, among employees who had training, absenteeism has decreased more for women more than for men.
+```{r}
+
+```
+
+
+
+
+
+#### Statement 8. (2.5 Points)	
+
+
+In this organization, among employees who had training, performance has increased more for men more than for women.
+```{r}
+
+```
+
+
